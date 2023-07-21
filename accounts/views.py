@@ -79,7 +79,7 @@ def signup(request):
         return render(request, 'accounts/signup.html')
     
 def logout(request):
-    if request.user.is_authenticated == True:
+    if request.user.is_authenticated:
         auth.logout(request)
         messages.success(request, 'Logged out successfully')
         return redirect('index')

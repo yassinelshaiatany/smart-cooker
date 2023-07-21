@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+i {
+    color: #fff;
+}
+
+/* Start Navbar */
+.navbar .navbar-brand img {
+    width: 60px;
+}
+/* End Navbar */
+
+/* Start Login / Signup Form */
+.verify-form {
+    margin: 50px auto;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.verify-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.verify-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.other a{
+    text-decoration: none;
+    color: #1e90ff;
+}
+/* End Login / Signup Form */
+
+/* Start Verify Options */
+.option {
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+background-color: #f4f4f4;
+}
+
+.option h2 {
+margin-top: 0;
+}
+/* End Verify Options */
+
+/* Start Dashboard */
+.service {
+    background-color: #333;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 10px;
+    font-size: larger;
+    text-decoration: none;
+}
+/* End Dashboard */
+
+/* Start Responsive Styles */
+@media screen and (max-width: 600px) {
+    .verify-form {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+/* End Responsive Styles */

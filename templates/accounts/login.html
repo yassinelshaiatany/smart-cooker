@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Start Form -->
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4">
+            {% include 'partials/_alerts.html' %}
+
+            <form class="verify-form" method="post">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" name="username" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-control">
+                </div>
+                <button type="submit" name="login-btn" class="btn btn-primary mb-3">Log In</button>
+                <p class="other text-center">Don't Have Account? <a href="{% url 'signup' %}">SignUp Now</a></p>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Form -->
+{% endblock %}

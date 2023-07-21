@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Zero & One</h1>
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4">
+            <a href="{% url 'verify_options' %}" class="verify-btn"><button class="btn btn-primary" style="margin: 50px auto;">Continue To Smart Cooker</button></a>
+            {% include 'partials/_alerts.html' %}
+        </div>
+    </div>
+</div>
+{% endblock %}

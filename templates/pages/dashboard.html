@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4">
+            {% include 'partials/_alerts.html' %}
+        </div>
+    </div>
+
+    <div class="content d-flex justify-content-center align-items-center">
+        <div class="row mt-5">
+            <div class="col-sm-8 col-md-6 col-lg-4 mx-2">
+                <a class="service">
+                    <i class="fa-solid fa-clock"></i>
+                </button>
+                <a class="service">
+                    <i class="fa-solid fa-camera"></i>
+                </button>
+                <a class="service">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-8 col-md-6 col-lg-4 mx-2">
+                <a class="service">
+                    <i class="fa-solid fa-temperature-high"></i>
+                </a>
+                <a class="service">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <a class="service" href="{% url 'logout' %}">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
